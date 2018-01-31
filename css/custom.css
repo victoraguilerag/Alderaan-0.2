@@ -2,6 +2,8 @@
 	margin: 0 !important;
 	padding: 0;
 	height: 40vh;
+	background-size: cover !important;
+	background-position: center center !important;
 }
 .menu {
 	height: 50vh !important;
@@ -62,6 +64,22 @@ header.masthead {
 	align-items: center;
 	z-index: 2;
 	color: white;
+}
+
+
+/*Imagenes de las secciones */
+
+.shirts {
+	background: url("../img/portfolio/01-thumbnail.jpg");
+}
+.flag {
+	background: url("../img/portfolio/02-thumbnail.jpg");
+}
+.shoe {
+	background: url("../img/portfolio/03-thumbnail.jpg");
+}
+.camera {
+	background: url("../img/portfolio/04-thumbnail.jpg");
 }
 @media (max-width: 600px) {
     .portfolio-item {
