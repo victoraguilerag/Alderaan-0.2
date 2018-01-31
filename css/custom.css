@@ -3,11 +3,28 @@
 	padding: 0;
 	height: 40vh;
 }
+.menu {
+	height: 50vh !important;
+}
+.menu  .portfolio-link {
+	height: 50vh !important;
+}
 .img-fluid {
     height: 100% !important;
+    width: 100%;
 }
-section#portfolio {
+section.contenido {
 	padding: 0 !important;
+}
+.portfolio-link {
+	height: 40vh;
+	max-width: none !important;
+}
+.menu {
+	height: 50vh !important;
+}
+.menu .portfolio-item {
+	height: 50vh;
 }
 .flex {
 	display: flex;
@@ -17,4 +34,10 @@ section#portfolio {
 }
 .flex h2 {
 	margin-bottom: 0 !important;
+}
+header.masthead {
+	height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
