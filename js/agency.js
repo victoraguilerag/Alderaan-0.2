@@ -8,7 +8,7 @@
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top - 54)
+          scrollTop: (target.offset().top)
         }, 1000, "easeInOutExpo");
         return false;
       }
@@ -28,6 +28,7 @@
 
   // Collapse Navbar
   var navbarCollapse = function() {
+    console.log($("#mainNav").offset().top)
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
     } else {
@@ -35,7 +36,7 @@
     }
   };
   // Collapse now if page is not at top
-  navbarCollapse();
+  // navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 

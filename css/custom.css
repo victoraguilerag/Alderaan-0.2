@@ -41,3 +41,17 @@ header.masthead {
     justify-content: center;
     align-items: center;
 }
+.dnone {
+	display: none;
+}
+.head {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+@media (max-width: 600px) {
+    .portfolio-item {
+    	width: 50% !important;
+    }
+}
