@@ -41,6 +41,33 @@
       </div>
     </header>
 
+    <header class="masthead video">
+      <div class="container">
+        <video autoplay loop id="video-background" muted plays-inline>
+          <source src="https://player.vimeo.com/external/158148793.hd.mp4?s=8e8741dbee251d5c35a759718d4b0976fbf38b6f&profile_id=119&oauth2_token_id=57447761" type="video/mp4">
+        </video>
+        <div class="intro-text">
+          <div class="intro-lead-in">Welcome To Our Studio!</div>
+          <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#menu">Tell Me More</a>
+        </div>
+      </div>
+    </header>
+
+    <header class="masthead video">
+      <div class="video-background">
+        <div id="player" class="video-foreground"></div>
+      </div>
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">Welcome To Our Studio!</div>
+          <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#menu">Tell Me More</a>
+        </div>
+      </div>
+    </header>
+
+
     <!-- Menu -->
     <section class="bg-light contenido" id="menu">
       <div>
@@ -519,6 +546,23 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.js"></script>
+
+    <!-- Daily Motion API -->
+    <script src="https://api.dmcdn.net/all.js"></script>
+    <script>
+      var player = DM.player(document.getElementById("player"), {
+          video: "xwr14q",
+          width: "100%",
+          height: "100%",
+          params: {
+              autoplay: true,
+              mute: true,
+              controls: false,
+              uilogo: false
+              // ui-start-screen-info: false
+          }
+      });
+    </script>
 
   </body>
 
