@@ -47,6 +47,9 @@ header.masthead {
     justify-content: center;
     align-items: center;
 }
+.local {
+    z-index: 10;
+}
 .dnone {
 	display: none;
 }
@@ -87,6 +90,7 @@ header.masthead {
 .video {
 	background-image: none !important;
 	position: relative;
+	overflow-y: hidden;
 }
 
 #video-background {
