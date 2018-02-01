@@ -46,6 +46,7 @@ header.masthead {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden; 
 }
 .local {
     z-index: 10;
@@ -111,7 +112,8 @@ header.masthead {
 .video-background {
   position: absolute;
   padding-bottom: 56.25%;
-  width: 100%;
+  width: 125%;
+  height: 140vh !important;
   text-align: left;
   z-index: -1;
 }
@@ -123,11 +125,11 @@ header.masthead {
   overflow: hidden;
 }
 @media (max-aspect-ratio: 16/9) {
-  .video-foreground { width: 300% !important; left: -100%; }
+  .video-foreground { width: 300% !important; left: -100% !important; }
 }
 @media (max-width: 700px) {
 	.video-foreground {
-		padding-bottom: 10%;
+		padding-bottom: 10% !important;
 	}
 }
 
