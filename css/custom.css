@@ -1,7 +1,12 @@
+.row-alderaan {
+	display: flex;
+	flex-flow: row wrap;
+}
 .portfolio-item {
 	margin: 0 !important;
 	padding: 0;
 	height: 40vh;
+	width: 50vw;
 	background-size: cover !important;
 	background-position: center center !important;
 }
@@ -112,7 +117,6 @@ header.masthead {
 }
 
 /* Video Responsive */
-
 
 .video-background {
   position: absolute;
