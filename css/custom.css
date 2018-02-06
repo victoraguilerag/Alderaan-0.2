@@ -134,6 +134,10 @@ header.masthead {
   overflow: hidden;
 }
 
+.blue {
+	background: rgba(50,50,200,1)
+}
+
 footer {
 	background-color: white;
 	z-index: 100;
