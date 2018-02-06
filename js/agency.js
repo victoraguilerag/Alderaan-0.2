@@ -27,18 +27,18 @@
   });
 
   // Collapse Navbar
-  var navbarCollapse = function() {
-    console.log($("#mainNav").offset().top)
-    if ($("#mainNav").offset().top > 100) {
-      $("#mainNav").addClass("navbar-shrink");
-    } else {
-      $("#mainNav").removeClass("navbar-shrink");
-    }
-  };
+  // var navbarCollapse = function() {
+  //   console.log($("#mainNav").offset().top)
+  //   if ($("#mainNav").offset().top > 100) {
+  //     $("#mainNav").addClass("navbar-shrink");
+  //   } else {
+  //     $("#mainNav").removeClass("navbar-shrink");
+  //   }
+  // };
   // Collapse now if page is not at top
   // navbarCollapse();
   // Collapse the navbar when page is scrolled
-  $(window).scroll(navbarCollapse);
+  // $(window).scroll(navbarCollapse);
 
   // Hide navbar when modals trigger
   $('.portfolio-modal').on('show.bs.modal', function(e) {
