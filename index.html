@@ -581,12 +581,24 @@
       var video2 = document.getElementById('video-2');
       var boton = document.getElementById('boton');
 
-      document.addEventListener("DOMContentLoaded", function(event) {
-          console.log('reproduciendo videos')
-          boton.classList.add('blue')
+      boton.addEventListener('click', function (evt) {
+        evt.preventDefault()
+        myFunction()
+        boton.classList.add('blue')
+      })
+
+      function myFunction() {
+        if (video1.paused) {
           video1.play();
           video2.play();
-      });
+          btn.innerHTML = "Pause";
+        } else {
+          video1.pause();
+          video2.pause();
+          btn.innerHTML = "Play";
+        }
+      }
+
     </script>
 
   </body>
