@@ -34,7 +34,7 @@
 
     <header class="masthead video">
       <div class="container">
-        <video autoplay loop id="video-1" class="v-background" muted playsinline>
+        <video autoplay loop preload="auto" id="video-1" class="v-background" muted playsinline>
           <source src="img/rain.mp4" type="video/mp4">
         </video>
         <div class="intro-text">
@@ -595,7 +595,7 @@
       document.addEventListener("DOMContentLoaded", function(event) { 
         boton.classList.add('blue');
         video1.play();
-        boton.classList.add('green');   
+        boton.classList.add('green');
       });
 
     </script>
