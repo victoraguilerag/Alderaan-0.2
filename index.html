@@ -592,11 +592,11 @@
           video1.pause();
         }
       }
-      document.addEventListener("DOMContentLoaded", function(event) { 
+      setTimeout(function() {
         boton.classList.add('blue');
         video1.play();
         boton.classList.add('green');
-      });
+      }, 10000)
 
     </script>
 

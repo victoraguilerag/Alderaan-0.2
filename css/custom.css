@@ -137,6 +137,9 @@ header.masthead {
 .blue {
 	background: rgba(50,50,200,1)
 }
+.green {
+	background: rgba(50,200,50,1)
+}
 
 footer {
 	background-color: white;
