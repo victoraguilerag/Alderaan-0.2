@@ -580,6 +580,7 @@
 
       var video1 = document.getElementById('video-1');
       var boton = document.getElementById('boton');
+      boton.classList.add('blue');
 
       boton.addEventListener('click', function (evt) {
         myFunction()
@@ -593,7 +594,6 @@
         }
       }
       setTimeout(function() {
-        boton.classList.add('blue');
         video1.play();
         boton.classList.add('green');
       }, 10000)
