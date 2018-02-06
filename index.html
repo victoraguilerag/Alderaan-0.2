@@ -577,22 +577,19 @@
               // ui-start-screen-info: false
           }
       });
+      
       var video1 = document.getElementById('video-1');
-      var video2 = document.getElementById('video-2');
       var boton = document.getElementById('boton');
 
       boton.addEventListener('click', function (evt) {
-        evt.preventDefault()
         myFunction()
       })
 
       function myFunction() {
         if (video1.paused) {
           video1.play();
-          video2.play();
         } else {
           video1.pause();
-          video2.pause();
         }
       }
       document.addEventListener("DOMContentLoaded", function(event) { 
