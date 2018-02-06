@@ -584,20 +584,20 @@
       boton.addEventListener('click', function (evt) {
         evt.preventDefault()
         myFunction()
-        boton.classList.add('blue')
       })
 
       function myFunction() {
         if (video1.paused) {
           video1.play();
           video2.play();
-          btn.innerHTML = "Pause";
         } else {
           video1.pause();
           video2.pause();
-          btn.innerHTML = "Play";
         }
       }
+      document.addEventListener("DOMContentLoaded", function(event) { 
+        boton.classList.add('blue')
+      });
 
     </script>
 
