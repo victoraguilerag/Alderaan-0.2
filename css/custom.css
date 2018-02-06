@@ -99,7 +99,7 @@ header.masthead {
 	overflow-y: hidden;
 }
 
-#video-background {
+.v-background {
 /*  making the video fullscreen  */
 	position: absolute;
 	right: 0; 
@@ -111,7 +111,7 @@ header.masthead {
 	z-index: -2;
 }
 
-.fixed #video-background {
+.fixed .v-background {
 	position: fixed !important;
 	z-index: -100;
 }

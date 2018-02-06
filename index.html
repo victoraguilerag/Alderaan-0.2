@@ -34,7 +34,7 @@
 
     <header class="masthead video">
       <div class="container">
-        <video autoplay loop id="video-background" muted playsinline>
+        <video autoplay loop id="video-1" class="v-background" muted playsinline>
           <source src="https://player.vimeo.com/external/158148793.hd.mp4?s=8e8741dbee251d5c35a759718d4b0976fbf38b6f&profile_id=119&oauth2_token_id=57447761" type="video/mp4">
         </video>
         <div class="intro-text">
@@ -58,7 +58,7 @@
 
     <header class="masthead video fixed">
       <div class="container">
-        <video autoplay loop id="video-background" muted plays-inline>
+        <video autoplay loop id="video-2" class="v-background" muted plays-inline>
           <source src="https://player.vimeo.com/external/158148793.hd.mp4?s=8e8741dbee251d5c35a759718d4b0976fbf38b6f&profile_id=119&oauth2_token_id=57447761" type="video/mp4">
         </video>
         <div class="intro-text">
@@ -576,6 +576,14 @@
               uilogo: false
               // ui-start-screen-info: false
           }
+      });
+      var video1 = document.getElementById('video-1');
+      var video2 = document.getElementById('video-2');
+
+      document.addEventListener("DOMContentLoaded", function(event) {
+          console.log('reproduciendo videos')
+          video1.play();
+          video2.play();
       });
     </script>
 
