@@ -33,8 +33,9 @@
 
 
     <header class="masthead video">
+      <img id="poster" src="img/poster.png" class="poster" alt="">
       <div class="container">
-        <video autoplay loop id="video-1" class="v-background" muted poster="/img/poster.png">
+        <video autoplay loop id="video-1" class="v-background fondo" muted poster="img/poster.png">
           <source src="img/cascada.mp4" type="video/mp4">
         </video>
         <div class="intro-text">
@@ -56,9 +57,9 @@
       </div>
     </header>
 
-    <header class="masthead video fixed">
+<!--     <header class="masthead video fixed">
       <div class="container">
-        <video autoplay loop id="video-2" class="v-background" muted plays-inline poster="/img/poster.png">
+        <video autoplay loop id="video-2" class="v-background" muted plays-inline poster="img/poster.png">
           <source src="https://player.vimeo.com/external/158148793.hd.mp4?s=8e8741dbee251d5c35a759718d4b0976fbf38b6f&profile_id=119&oauth2_token_id=57447761" type="video/mp4">
         </video>
         <div class="intro-text">
@@ -67,7 +68,7 @@
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#menu">Tell Me More</a>
         </div>
       </div>
-    </header>
+    </header> -->
 
 <!--     <header class="masthead video">
       <div class="video-background">
@@ -565,23 +566,23 @@
     <!-- Daily Motion API -->
     <script src="https://api.dmcdn.net/all.js"></script>
     <script>
-      var player = DM.player(document.getElementById("player"), {
-          video: "xwr14q",
-          width: "100%",
-          height: "100%",
-          params: {
-              autoplay: true,
-              mute: true,
-              controls: false,
-              uilogo: false
-              // ui-start-screen-info: false
-          }
-      });
-
-      var video1 = document.getElementById('video-1');
+      // var player = DM.player(document.getElementById("player"), {
+      //     video: "xwr14q",
+      //     width: "100%",
+      //     height: "100%",
+      //     params: {
+      //         autoplay: true,
+      //         mute: true,
+      //         controls: false,
+      //         uilogo: false
+      //         // ui-start-screen-info: false
+      //     }
+      // });
+      var poster = document.getElementById('poster')
+      var myVideo = document.getElementById('video-1');
       var boton = document.getElementById('boton');
 
-      video1.pause()
+      myVideo.pause()
       boton.classList.add('blue');
 
       boton.addEventListener('click', function (evt) {
@@ -590,16 +591,23 @@
       })
 
       function myFunction() {
-        if (video1.paused) {
-          video1.play();
+        if (myVideo.paused) {
+          myVideo.play();
         } else {
-          video1.pause();
+          myVideo.pause();
         }
       }
-      setTimeout(function() {
-        boton.click()
-        boton.classList.add('green');
-      }, 30000)
+
+
+      myVideo.addEventListener('canplay', function() {
+        console.log('play')
+        poster.classList.add('apagado')
+        myVideo.play();
+      });
+
+      myVideo.load();
+      myVideo.play();
+
 
     </script>
 
