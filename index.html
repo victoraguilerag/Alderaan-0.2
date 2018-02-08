@@ -585,7 +585,8 @@
       boton.classList.add('blue');
 
       boton.addEventListener('click', function (evt) {
-        myFunction()
+      	console.log('click');
+        myFunction();
       })
 
       function myFunction() {
@@ -596,7 +597,7 @@
         }
       }
       setTimeout(function() {
-        video1.play();
+        boton.click()
         boton.classList.add('green');
       }, 30000)
 
