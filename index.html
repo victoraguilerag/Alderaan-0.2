@@ -33,7 +33,6 @@
 
 
     <header class="masthead video">
-      <img id="poster" src="img/poster.png" class="poster" alt="">
       <div class="container">
         <video autoplay loop id="video-1" class="v-background fondo" muted poster="img/poster.png">
           <source src="img/cascada.mp4" type="video/mp4">
@@ -578,35 +577,6 @@
       //         // ui-start-screen-info: false
       //     }
       // });
-      var poster = document.getElementById('poster')
-      var myVideo = document.getElementById('video-1');
-      var boton = document.getElementById('boton');
-
-      myVideo.pause()
-      boton.classList.add('blue');
-
-      boton.addEventListener('click', function (evt) {
-      	console.log('click');
-        myFunction();
-      })
-
-      function myFunction() {
-        if (myVideo.paused) {
-          myVideo.play();
-        } else {
-          myVideo.pause();
-        }
-      }
-
-
-      myVideo.addEventListener('canplay', function() {
-        console.log('play')
-        poster.classList.add('apagado')
-        myVideo.play();
-      });
-
-      myVideo.load();
-      myVideo.play();
 
 
     </script>
