@@ -149,7 +149,7 @@ footer {
 	z-index: 100;
 }
 .poster{
-	background-image: url('../img/poster.png') !important;
+	background-image: url('../img/poster.jpg') !important;
 	background-size: cover; 
 }
 .fondo {
