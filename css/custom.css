@@ -53,6 +53,8 @@ header.masthead {
     align-items: center;
     overflow: hidden; 
     position: relative;
+}
+#poster {
     background-image: none;
 }
 .local {
